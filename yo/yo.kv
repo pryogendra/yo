@@ -1,0 +1,18 @@
+<Root>
+    BoxLayout:
+        size:root.size
+        orientation:"horizontal"
+        TextInput:
+            id:code
+            text:""
+            font_size:25
+        Button:
+            text:"RUN"
+            size_hint:.1,.05
+            pos_hint:{'top':0.99}
+            background_color:0,1,0,1
+            on_release:root.run()
+        TextInput:
+            id:output
+            text:""
+            font_size:25
